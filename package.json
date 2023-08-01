@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "inquirer": "^9.2.9"
+  },
+  "name": "robowave-2023",
+  "description": "A ficticious robot company website for a Bootstrap, jQuery code-along in class.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "add-new-robot-page": "node scripts/add-new-robot-page.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
