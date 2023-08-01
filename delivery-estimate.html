@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A ficticious robot company website for a Bootstrap and jQuery code-along in class" />
+  <title>Delivery Estimate</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico"/>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;700&display=swap" rel="stylesheet">
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <!-- custom -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body id="delivery-estimate-page" class="bg-dark text-light">
+
+  <main class="container">
+    <div id="error" class="alert alert-danger d-none"></div>
+
+    <div class="card bg-transparent border-success mt-4 text-center">
+      <!-- heading -->
+      <div class="card-title p-3">  
+        <h1 class="display-5 text-center text-info">Delivery Estimate</h1>
+      </div>
+      <!-- loading -->
+      <div id="loading" class="d-flex flex-column justify-content-center align-items-center p-4 text-center">
+        <div class="spinner-grow text-success" role="status">
+          <span class="visually-hidden">Estimating delivery...</span>
+        </div>
+        <p class="text-success">Crunching some numbers...</p>
+      </div>
+      <!-- data -->
+      <h3 id="botName" class="card-text text-white text-center"></h3>
+      <h4 id="botPrice" class="card-text text-white text-center"></h4>
+      <hr/>
+      <h2 id="totalCost" class="card-text text-white text-center"></h2>
+
+      <p class="card-text text-white text-center mb-4"><a href="/index.html">&larr; Back to Home</a></p>
+    </div>
+    
+  </main>
+
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <!-- custom js -->
+  <script src="./assets/js/delivery-estimate.js"></script>
+</body>
+</html>
